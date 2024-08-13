@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:simpleappview_flutter/view/home/components/contact_section.dart';
 import 'package:simpleappview_flutter/view/home/components/image_section.dart';
+import 'package:simpleappview_flutter/view/home/components/info_section.dart';
 import 'package:simpleappview_flutter/view/home/components/location_section.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -21,6 +22,7 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
       ),
       body: const SingleChildScrollView(
+        physics: AlwaysScrollableScrollPhysics(),
         child: Column(
           children: [
             ImageSection(),
@@ -28,6 +30,8 @@ class HomeScreen extends StatelessWidget {
             LocationSection(),
             SizedBox(height: 15,),
             ContactSection(),
+            SizedBox(height: 15,),
+            InfoSection(),
           ],
         ),
       ),
