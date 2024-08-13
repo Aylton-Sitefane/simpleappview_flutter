@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simpleappview_flutter/view/home/components/button_with_text.dart';
 
 class ContactSection extends StatelessWidget {
   const ContactSection({super.key});
@@ -8,22 +9,21 @@ class ContactSection extends StatelessWidget {
     return const Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        Icon(
-          Icons.add_ic_call_sharp,
-          size: 35,
+        ButtonWithText(
           color: Colors.blueAccent,
+          icon: Icons.add_ic_call_sharp,
+          label: "Ligar",
         ),
-        Icon(
-          Icons.room_outlined,
-          size: 35,
+        ButtonWithText(
           color: Colors.blueAccent,
-
+          icon: Icons.room_outlined,
+          label: "Rota",
         ),
-        Icon(
-          Icons.share,
+        ButtonWithText(
           color: Colors.blueAccent,
-          size: 35,
-        )
+          icon: Icons.share,
+          label: "Partilhar",
+        ),
       ],
     );
   }
