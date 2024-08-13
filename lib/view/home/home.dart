@@ -20,6 +20,7 @@ class HomeScreen extends StatelessWidget {
           
         ),
         centerTitle: true,
+        backgroundColor: Colors.transparent,
       ),
       body: const SingleChildScrollView(
         physics: AlwaysScrollableScrollPhysics(),

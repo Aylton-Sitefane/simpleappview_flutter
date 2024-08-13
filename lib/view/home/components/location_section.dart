@@ -36,7 +36,7 @@ class LocationSection extends StatelessWidget {
           ), 
           const SizedBox(width: 40,), 
           const Icon(
-            Icons.star_border_purple500_outlined,
+            Icons.star,
             color: Colors.red,
             
           ),
