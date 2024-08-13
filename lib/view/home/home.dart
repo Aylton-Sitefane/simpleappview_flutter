@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simpleappview_flutter/view/home/components/image_section.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -10,12 +11,20 @@ class HomeScreen extends StatelessWidget {
         title: const Text(
           "Simple flutter app"
         ),
-        titleTextStyle: TextStyle(
+        titleTextStyle: const TextStyle(
           color: Colors.black,
           fontWeight: FontWeight.bold,
           
         ),
         centerTitle: true,
+      ),
+      body: const SingleChildScrollView(
+        child: Column(
+          children: [
+            ImageSection(),
+            
+          ],
+        ),
       ),
     );
   }
