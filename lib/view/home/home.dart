@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simpleappview_flutter/view/home/components/contact_section.dart';
 import 'package:simpleappview_flutter/view/home/components/image_section.dart';
 import 'package:simpleappview_flutter/view/home/components/location_section.dart';
 
@@ -25,6 +26,8 @@ class HomeScreen extends StatelessWidget {
             ImageSection(),
             SizedBox(height: 15,),
             LocationSection(),
+            SizedBox(height: 15,),
+            ContactSection(),
           ],
         ),
       ),
