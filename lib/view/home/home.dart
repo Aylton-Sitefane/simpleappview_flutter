@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simpleappview_flutter/view/home/components/image_section.dart';
+import 'package:simpleappview_flutter/view/home/components/location_section.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -22,7 +23,8 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             ImageSection(),
-            
+            SizedBox(height: 15,),
+            LocationSection(),
           ],
         ),
       ),
